@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 3</title>
+</head>
+<body>
+
+    <marquee>
+        <!-- có thể thêm ảnh vào được  -->
+        Nga
+    </marquee>
+    <marquee >
+        <img src="" alt="">
+    </marquee>
+    <!-- thẻ ol và li  -->
+    <h1> bai 3 </h1>
+    <!-- danh sach list  -->
+    <!-- có thứ tự ol li  -->
+    <p>danh sach cong viec vao buoi sang </p>
+    <ol>
+        <li>thức dậy </li>
+        <li>ăn sáng </li>
+        <li>đi học</li>
+        <li>giải lao </li>
+    </ol>
+
+    <!--  ul là thẻ không ucos thứ tự  -->
+    <p>các ngôn ngữ lập trình web </p>
+    <li>js</li>
+    <li>python</li>
+    <li>c#</li>
+    <li>PHP</li>
+
+    <!--  form - khó   -->
+    <h1>form </h1>
+    <form>
+        <!-- dùng placeholder -->
+        <div>
+            <b>họ và tên </b>
+            <input type="text" name="hoten" placeholder="nhập tên vào đây">
+        </div>
+        <br>
+        <!-- dùng value  -->
+        <div>
+            <b>nam</b>
+            <input type="text" name="hoten" value="2025" readonly>
+        </div>
+        <!--  vieets nhìu  -->
+        <div>
+            <b>giới thiệu chi tiết về bản thân </b> <br>
+            <textarea name="gioithieu" >nhập giới thiệu ... </textarea>
+        </div>
+        <!-- email -->
+        <div>
+            <b>giới thiệu chi tiết về bản thân </b> <br>
+            <input type="email" name="email" placeholder="dạng @gmail.com">
+        </div>
+        <br>
+
+        <!-- required dùng để bắt buộc ghi  -->
+        <div>
+            <p>số điện thoại </p>
+            <input type="tel" name="sodienthoai" placeholder="dạng số : 09..." required>
+        </div>
+
+        <!-- pattern là người dùng phải nhập theo đúng mẫu trong ngoặc"" -->
+        <div>
+            <input type="tel" name="sodienthoai" placeholder="dạng số : 09..." required pattern="([0]{1}([0,3,9]{1})([0-9]{8}))">
+        </div>
+        <br>
+        <!-- radio  -->
+        <div>
+            <b>giới tính </b> <br>
+            <input type="radio" name="gioitinh" value="nam"> nam <br>
+            <input type="radio" name="gioitinh" value="nu">nu <br>
+            <input type="radio" name="gioitinh" value="khongxacdinh">không xac dinh  <br>
+        </div>
+
+        <!--  checkbox -->
+        
+        <div> 
+            <p>so thich </p>
+            game : <input type="checkbox" name="sothich" value="game"> <br>
+            music : <input type="checkbox" name="sothich" value="music"><br>
+            sport : <input type="checkbox" name="sothich" value="sport"> <br>
+        </div>
+        
+        <!-- chũ cs giá trị ban đầu   -->
+        <div>
+            <b>trình duyệt ưa thich</b>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+            </datalist>
+        </div>
+    
+        <!-- có giá trị ban đầu  -->
+        <select name="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+        </select>
+        <!-- kéo  -->
+        <div>
+            0 <input type="range" value="10"> 100
+        </div>
+        <!-- số   -->
+        <div>
+            <b> tuoi </b> <br>
+            <input type="number" value="tuoi">
+        </div>
+        <!-- ngaythangnamsinh -->
+        <div>
+            <b> ngày tháng năm sinh </b>
+            <input type="date" name="ngaythangnamsinh">
+        </div>
+        <!--mau sac  -->
+        <div>
+            <b>mau sac ua thich </b>
+            <input type="color" name="mausacuathich">
+        </div>
+        <!-- chon anh  -->
+        <div>
+            <b>chon anh dai dien </b>
+            <input type="file">
+        </div>
+        <!-- mat khau  -->
+        <div>
+            <b>mat khau </b>
+            <input type="password">
+        </div>
+
+        <!-- reset : làm ms toàn bộ các nít input  -->
+        <div>
+            <b>reset</b>
+            <input type="reset">
+        </div>
+        <!-- nut submit -->
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <!-- iframe : dùng để nhúng  -->
+    <iframe src="" frameborder="0"></iframe>
+
+    <!-- chen video vao  -->
+    <video controls width="560" height="315">
+        <source src="1.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="BauTroiMoi.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>
