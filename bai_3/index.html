@@ -8,6 +8,7 @@
 <body>
 
     <marquee>
+        <!-- thẻ marquee dùng cho nội dung bên trong chạy trên đầu trang web  -->
         <!-- có thể thêm ảnh vào được  -->
         Nga
     </marquee>
@@ -28,10 +29,12 @@
 
     <!--  ul là thẻ không ucos thứ tự  -->
     <p>các ngôn ngữ lập trình web </p>
-    <li>js</li>
-    <li>python</li>
-    <li>c#</li>
-    <li>PHP</li>
+    <ul>
+        <li>js</li>
+        <li>python</li>
+        <li>c#</li>
+        <li>PHP</li>
+    </ul>
 
     <!--  form - khó   -->
     <h1>form </h1>
@@ -42,12 +45,12 @@
             <input type="text" name="hoten" placeholder="nhập tên vào đây">
         </div>
         <br>
-        <!-- dùng value  -->
+        <!-- dùng value : nội dung sẽ có sẵn , readonly là người dùng không sửa được nd  -->
         <div>
             <b>nam</b>
             <input type="text" name="hoten" value="2025" readonly>
         </div>
-        <!--  vieets nhìu  -->
+        <!--  vieets nhìu nd thì ta dùng textarea   -->
         <div>
             <b>giới thiệu chi tiết về bản thân </b> <br>
             <textarea name="gioithieu" >nhập giới thiệu ... </textarea>
@@ -59,7 +62,7 @@
         </div>
         <br>
 
-        <!-- required dùng để bắt buộc ghi  -->
+        <!-- required dùng để bắt buộc ghi , không ghi thì nút submit ở cuối form sẽ tb lỗi  -->
         <div>
             <p>số điện thoại </p>
             <input type="tel" name="sodienthoai" placeholder="dạng số : 09..." required>
@@ -70,7 +73,7 @@
             <input type="tel" name="sodienthoai" placeholder="dạng số : 09..." required pattern="([0]{1}([0,3,9]{1})([0-9]{8}))">
         </div>
         <br>
-        <!-- radio  -->
+        <!-- radio : chú í phải cùng name thì mới đucowj chọn mọt cái  -->
         <div>
             <b>giới tính </b> <br>
             <input type="radio" name="gioitinh" value="nam"> nam <br>
@@ -87,7 +90,7 @@
             sport : <input type="checkbox" name="sothich" value="sport"> <br>
         </div>
         
-        <!-- chũ cs giá trị ban đầu   -->
+        <!-- không cs giá trị ban đầu   -->
         <div>
             <b>trình duyệt ưa thich</b>
             <input list="browsers">
@@ -106,7 +109,7 @@
             <option value="Chrome">Chrome</option>
             <option value="Opera">Opera</option>
         </select>
-        <!-- kéo  -->
+        <!-- range : kéo  -->
         <div>
             0 <input type="range" value="10"> 100
         </div>
@@ -132,6 +135,7 @@
         </div>
         <!-- mat khau  -->
         <div>
+            <!-- thẻ b để in đậm -->
             <b>mat khau </b>
             <input type="password">
         </div>
@@ -146,9 +150,11 @@
             <input type="submit">
         </div>
     </form>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wqIWG_vc2QE?si=EW4GiJbXU2t6S2SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
     <!-- iframe : dùng để nhúng  -->
-    <iframe src="" frameborder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wqIWG_vc2QE?si=EW4GiJbXU2t6S2SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <br>
     <!-- chen video vao  -->
     <video controls width="560" height="315">
@@ -158,6 +164,8 @@
     <audio controls>
         <source src="/bai_3/music.mp3" type="audio/mp3">
     </audio>
+    
+    
 
 </body>
 </html>

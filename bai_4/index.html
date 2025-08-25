@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai_4 </title>
+    <style>
+        /* cách internal style  này đều tác động đến tất cả các thẻ h2  */
+        h2{
+            color: red;
+        }
+        p{
+            color: blue;
+        }
+        a:link{
+            color: red;
+        }
+        h3:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+    </style>
+    <!-- thẻ link dùng để liên kết vs file style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <!-- có ba cách css :
+        c1: inline style : viết trực tiếp vào thẻ luôn 
+        c2: internal style : viết trong một cặp thẻ style 
+        c3: external style : dùng thẻ link 
+    -->
+    <!-- color : dùng cho màu chữ -->
+    <!-- background-color : dùng để cho màu nền  -->
+    <h1 style="color: blue; background-color: orange ;">
+        inline style 
+    </h1>
+    <h2 class="bg">internal style </h2>
+    <h2>Nguyễn Thúy Nga </h2>
+    <h3 class="bg">external style </h3>
+    <h3 id="title"> bai css</h3>
+    <!-- mức độ ưu tiên  
+        1.inline style 
+
+    -->
+    <!-- vd : do code chạy từ trên xuống nên external được ưu tiên hưn internal trong th này   -->
+    <p> vd mức độ ưu tiên </p>
+
+
+    <!-- h1.title { } :  tức là thẻ h1 có class là title ms có tác dụng  -->
+    <!-- div b { } : là thẻ các thẻ b phải bên trong thẻ div thì ms có tác dụng  -->
+
+    <a href="https://daotao-demo.humg.edu.vn/#/home">HUMG</a>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+
+    
+</body>
+</html>
