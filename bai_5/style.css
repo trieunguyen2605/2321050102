@@ -324,10 +324,10 @@ main{
     border-radius: 8px;
 }
 
-.app-store_nd img{
+/* .app-store_nd img{
     width: 30px;
     height: 48px;
-}
+} */
 
 .img_app{
     margin-left: 64px;
@@ -340,7 +340,7 @@ main{
 }
 
 .app_content p {
-    margin: 0;
+    margin: 12px 0 0    ;
     padding-top: 4px;
 }
 
