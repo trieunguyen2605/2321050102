@@ -1,0 +1,97 @@
+body{
+    background-color: #F2F4F7;
+}
+main{
+    display: flex;
+    width: 60%;
+    background-color: #F2F4F7;
+    margin: auto;
+    padding: 20px;
+}
+
+.noidung-trai{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* margin-top: 20%; */
+    height: 600px;
+    padding-right: 30px;
+}
+
+.title{
+    color: blue;
+    margin: 10px;
+    font-size: 60px;
+}
+
+.title-nd{
+    margin: 0;
+    color: #2d2c2c;
+}
+
+/*  nội dung phải  */
+.noidung-phai{
+    width: 36%;
+    height: 100%;
+    background-color: #fff;
+    margin-top: 16%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 30px #616060;
+}
+
+.container{
+    
+}
+
+.nd-tren{
+    border-bottom: 1px solid #999898;
+}
+
+.dangnhap input{
+    display: block ;
+    width: 304px;
+    padding: 10px 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #999898;
+}
+
+.dn-btn{
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(38, 38, 217);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.dangnhap input:nth-child(2){
+    margin-top: 10px;       
+}
+
+.quenmk{
+    text-align: end;
+    margin: 10px 0  ;
+}
+
+.quenmk-link{
+    text-decoration: none;
+    color: #454242;
+}
+
+.quenmk-link:hover{
+    color: red;
+    text-decoration: underline;
+}
+.nd-duoi{
+    margin-top: 20px;
+}
+
+.create{
+
+}

@@ -1,0 +1,126 @@
+body{
+    background-color: #000;
+    color: #fff;
+}
+.container{
+    width: 40%;
+    height: 700px;
+    background-color: #000;
+    margin: auto;
+}
+
+.noidung{
+    width: 70%;
+    background-color: #000;
+    height: 500px;
+    margin: auto;
+}
+
+.noidung-tren{
+    border-bottom: 1px solid #2b2b2b;
+}
+.form{
+    width: 80%;
+    background-color: #000;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.form .logo{
+    text-align: center;
+    font-size: 30px;
+}
+.form h1{
+    text-align: center;
+    font-size: 26px;
+    margin: 2px 0 10px 0  ;
+}
+
+.khoi-nut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.khoi-nut button  p{
+    margin: 0;
+}
+
+.khoi-nut .icon {
+    margin-right: 10px;
+}
+
+
+
+.khoi-nut p:nth-child(4){
+    margin-left:  10px;
+}
+.blue{
+    color: rgb(18, 18, 224);
+}
+.white{
+    color: white;
+}
+button{
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #c8c7c7;
+    border-radius: 20px ;
+    border: 2px solid #a09d9d;
+}
+
+/*  nội dung dưới  */
+.noidung-duoi{
+    width: 70%;
+    margin: auto;
+}
+.form-duoi{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-duoi p{
+    margin: 0 0 4px 0 ;
+}
+.form-duoi_input{
+    width: 90%;
+    color: white;
+    background-color: #000;
+    padding: 10px;
+}
+
+.form-duoi_btn{
+    margin-top: 20px;;
+    width: 98%;
+    background-color: rgb(157, 227, 51);
+    color: #fff;
+}
+
+.help{
+    display: flex;
+
+}
+
+.help p{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.help a {
+    text-decoration: none;
+    color: white;
+}
+
+.help a:hover{
+    text-decoration: underline;
+}
+
+button{
+    cursor: pointer;
+}

@@ -111,6 +111,9 @@ main{
     border-radius: 10px;
 }
 
+.theloai{
+    cursor: pointer;
+}
 
 .tentheloai {
     margin: 20px;
@@ -156,6 +159,7 @@ footer{
 }
 .hotro-tp + .hotro-tp{
     display: flex;
+    width: 20%;
 }
 
 .hotro-title{
