@@ -2,6 +2,15 @@ body{
     background-color: #000;
     color: #fff;
 }
+
+.body-2{
+    background-color: #fff;
+}
+
+main{
+    margin-top: 130px;
+}
+
 .container{
     width: 40%;
     height: 700px;
@@ -34,6 +43,7 @@ body{
     text-align: center;
     font-size: 26px;
     margin: 2px 0 10px 0  ;
+    color: #efefef;
 }
 
 .khoi-nut{
@@ -56,11 +66,14 @@ body{
 .khoi-nut p:nth-child(4){
     margin-left:  10px;
 }
+.mau{
+    color: rgb(225, 223, 223);
+}
 .blue{
-    color: rgb(18, 18, 224);
+    color: rgb(71, 71, 213);
 }
 .white{
-    color: white;
+    color: rgb(221, 221, 221);
 }
 button{
     width: 80%;
@@ -87,6 +100,7 @@ button{
 
 .form-duoi p{
     margin: 0 0 4px 0 ;
+    color: #c9c8c8;
 }
 .form-duoi_input{
     width: 90%;
@@ -102,6 +116,9 @@ button{
     color: #fff;
 }
 
+.form-duoi_btn:hover{
+    opacity: 0.9;
+}
 .help{
     display: flex;
 
@@ -110,11 +127,12 @@ button{
 .help p{
     margin: 0;
     margin-right: 10px;
+    color: #b5b3b3;
 }
 
 .help a {
     text-decoration: none;
-    color: white;
+    color: rgb(213, 213, 213);
 }
 
 .help a:hover{

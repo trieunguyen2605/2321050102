@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <!-- internal -->
+    <script >
+        document.writeln("hello world " + " 123" +"<br>"); // viết thêm vào 
+        // để khai báo biến dùng var let const 
+        // cú pháp : let tên biến = giá trị 
+        // để nối chuỗi js dùng dấu + 
+        let hoTen = " Nguyen Van Trieu " + "<br>";
+        document.writeln(hoTen);
+
+        let soThuNhat = 10;
+        let soThuHai = 5;
+        let ketQua = 0;
+        // phép cộng : +
+        // phép trừ : - 
+        // phép nhân : *
+        // phép chia : /
+        // tăng 1 : ++
+        // giảm 1 : --
+
+        // ketQua = soThuNhat / soThuHai; // 2 
+        // ketQua++; // 3 
+        // document.writeln(++ketQua);// 4  
+        
+        // soThuNhat += soThuHai; // so ThuNhat = soThuNhat + soThuHai ;
+        // soThuNhat -= soThuHai; // so ThuNhat = soThuNhat - soThuHai ;
+        // soThuNhat *= soThuHai; // so ThuNhat = soThuNhat * soThuHai ;
+        // soThuNhat /= soThuHai; // so ThuNhat = soThuNhat / soThuHai ;
+        document.writeln(soThuNhat);
+        let test = true ;
+        document.writeln(soThuNhat == soThuHai); //false 
+        document.writeln(soThuNhat === soThuHai); // false 
+        document.writeln(soThuNhat !== soThuHai); //  true (thỏa mãn một trong hai đk )
+        document.writeln(!test); // false
+
+        // object 
+        let thongTinSinhVien = {
+            hoTen :"Nguyen Thuy Nga ",
+            msv : 2321050096,
+            gioiTinh : false,
+            tuoi:20,
+            lop: "DCCTCT68A"
+        };
+        let diaChiNhaEm = {
+            thanhPho : "Bắc Ninh ",
+            huyen:" Thuận Thành ",
+            duong:"ABC",
+            soNha :"..."
+        };
+        thongTinSinhVien.diaCHi = diaChiNhaEm;
+        let namNay = 2025;
+        document.writeln(" xin chào : " + thongTinSinhVien.hoTen + " , tuoi : " + thongTinSinhVien.tuoi +" nam sinh : " + (namNay - thongTinSinhVien.tuoi));
+        document.writeln(thongTinSinhVien.diaCHi.thanhPho); // Bắc Ninh         
+
+        
+    </script>
+</body>
+</html>
