@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thongTinDonHang ={
+            //1
+            maDonHang : "1234",
+            //2
+            thongTinKhachHang :{
+                hoTen : "Nguyen Van Trieu ",
+                soDT : "1234456",
+                trangThaiThanhVien : true
+            },
+            //3
+            danhSachSanPham :{
+                caphe : {
+                    maSanPham : "1",
+                    tenSanPham : "ca phe ",
+                    soLuong : 3,
+                    giaTien : 10000
+                },
+                matcha : {
+                    maSanPham : "2",
+                    tenSanPham : "matcha ",
+                    soLuong : 3,
+                    giaTien : 10000
+                },
+                traSua : {
+                    maSanPham : "3",
+                    tenSanPham : "tra sua  ",
+                    soLuong : 3,
+                    giaTien : 10000
+                }
+            },
+            // 4
+            trangThaiThanhToan :true ,
+            // 5 
+            diaChiGiaoHang :"ABC"
+        }
+        // tổng số tiền 
+        document.writeln(thongTinDonHang.danhSachSanPham.caphe.giaTien*thongTinDonHang.danhSachSanPham.caphe.soLuong 
+        + thongTinDonHang.danhSachSanPham.matcha.giaTien *thongTinDonHang.danhSachSanPham.matcha.soLuong
+        + thongTinDonHang.danhSachSanPham.traSua.giaTien *thongTinDonHang.danhSachSanPham.traSua.soLuong)
+        document.writeln(" <br> độ dài đơn hàng lầ : " + thongTinDonHang.maDonHang.length)
+
+
+        var myString = "He llo";
+        document.writeln(" myString[0] : " + myString[0]);
+        document.writeln( "slice : "+myString.slice(1,4)); "<br>"
+        document.writeln(myString.replace("hello", "hi")); "<br>"
+        document.writeln(myString.toUpperCase());
+        document.writeln(myString.indexOf('o')); // nếu có trả ra số , không có -1 
+        document.writeln(myString.includes('o')); // kiểm tra trong kí tự có chữ e không // có trả true 
+        document.writeln(myString.split(' '))
+        let danhSach = ["N T N","IU","N V T"];
+        document.writeln(danhSach[1].startsWith("iuem"));// true false 
+        // chuyển chuỗi về số 
+        let so = "123";
+        document.writeln(typeof(so))//
+        document.writeln(typeof(Number(so))) // number
+        document.writeln(parseInt("10.3")); // 10
+        document.writeln(parseFloat("10.3")); // 10.3
+        var pi = 3.1413
+        document.writeln(pi.toFixed(2)); // 3.14
+        document.writeln(isNaN(NaN))// true // 
+        document.writeln(isFinite(10))// true // là số hữu hạn  
+        let toDay = new Date();
+        
+        document.writeln(toDay.getDate()) // ngày 
+        document.writeln(toDay.getMonth()) // tháng 
+        document.writeln(toDay.getDay()) // thứ
+        // document.writeln(toDay.getDay())
+        document.writeln(toDay.getHours())
+
+
+    </script>
+</body>
+</html>
