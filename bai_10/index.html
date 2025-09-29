@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1 mảng 
+        let arr = [1,2,3,4,5,'a','c',5,6];
+        document.writeln(arr.length); // 7 
+        document.writeln(arr[3]);// 4 
+        document.writeln(arr.indexOf(4)); //  3, tìm vị trí trong mảng  , không có thì ra -1 
+        document.writeln(arr.lastIndexOf(5)); //  8 , tìm vị trí xuất hiện cuối cùng xuất hiện trong mảng 
+        document.writeln(Array.isArray(arr)); // true , kiểm tra coi có phải là mảng hay không
+
+        // phương thức 
+
+        //concat : noios mangr 
+        // let a,b,c,d;
+        // a = [1,2,3];
+        // b = "javascript";
+        // c = [25,"VB Script"];
+        // a = a.concat(b,c); // nối mảng a với mảng b và mảng c 
+        // document.writeln(a);
+        // d = a.concat(b,c);
+        // document.writeln(d);
+        // // join : các phần tử cách nhau 
+        // document.writeln(d.join("-"));
+        // document.writeln(typeof(d.join())); // string 
+        // // pop()
+        // document.writeln(d.pop()); // xóa phần tử khỏi mảng và in ra nó 
+        // // push() : thêm phần tử vào cuối mảng 
+        // d.push(" Nga ");
+        // document.writeln(d)   
+        // // reverse() : đảo ngược chuỗi 
+        // document.writeln(d.reverse())
+        // // shift() : xóa phần tử cuối mảng 
+        // d.shift();
+        // document.writeln(d);
+        // // unshift() : thêm phần tử vào đầu mảng 
+        // d.unshift(0)
+        // document.writeln(d);
+
+        //  2 if else 
+
+        // let toDay = new Date();
+        // let now = toDay.getHours()
+        // if(now <= 10 ){
+        //     document.writeln("good morning!")
+        // }else if(now > 10 && now <12){
+        //     document.writeln("chào buổi trưa !");
+        // }else if (now > 12 && now < 17 ){
+        //     document.writeln(" chào buổi chiều")
+        // }else if(now >17 && now <22){
+        //     document.writeln("chào buổi tối !");
+        // }else{
+        //     document.writeln(" good evening");
+        // }
+
+        // liểm tra chẵn lẻ
+        let so = "1234";
+        let soCuoi = parseInt(so[so.length -1 ]);
+        if(soCuoi %2 == 0){
+            document.writeln(" đây là số chắn ! ");
+        }else{
+            document.writeln(" số lẻ !")
+        }
+        document.writeln()
+
+        
+    </script>
+</body>
+</html>

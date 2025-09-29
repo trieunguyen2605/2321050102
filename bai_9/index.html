@@ -47,18 +47,17 @@
         + thongTinDonHang.danhSachSanPham.matcha.giaTien *thongTinDonHang.danhSachSanPham.matcha.soLuong
         + thongTinDonHang.danhSachSanPham.traSua.giaTien *thongTinDonHang.danhSachSanPham.traSua.soLuong)
         document.writeln(" <br> độ dài đơn hàng lầ : " + thongTinDonHang.maDonHang.length)
-
-
+        // chuỗi 
         var myString = "He llo";
         document.writeln(" myString[0] : " + myString[0]);
-        document.writeln( "slice : "+myString.slice(1,4)); "<br>"
-        document.writeln(myString.replace("hello", "hi")); "<br>"
+        document.writeln( "slice : "+myString.slice(1,4)); "<br>" // cắt chuỗi từ 1->3 
+        document.writeln(myString.replace("hello", "hi")); "<br>" // thay đổi hello -> hi 
         document.writeln(myString.toUpperCase());
         document.writeln(myString.indexOf('o')); // nếu có trả ra số , không có -1 
         document.writeln(myString.includes('o')); // kiểm tra trong kí tự có chữ e không // có trả true 
-        document.writeln(myString.split(' '))
+        document.writeln(myString.split(' ')) // tách chuỗi thành mảng 
         let danhSach = ["N T N","IU","N V T"];
-        document.writeln(danhSach[1].startsWith("iuem"));// true false 
+        document.writeln(danhSach[1].startsWith("moaoa"));// true false - kiểm tra coi có bắt đàu bằng 
         // chuyển chuỗi về số 
         let so = "123";
         document.writeln(typeof(so))//
@@ -66,16 +65,17 @@
         document.writeln(parseInt("10.3")); // 10
         document.writeln(parseFloat("10.3")); // 10.3
         var pi = 3.1413
-        document.writeln(pi.toFixed(2)); // 3.14
-        document.writeln(isNaN(NaN))// true // 
+        document.writeln(pi.toFixed(2)); // 3.14 - làm tròn số 
+        document.writeln(isNaN(NaN))// true // kết quả là NaN thì true 
         document.writeln(isFinite(10))// true // là số hữu hạn  
-        let toDay = new Date();
-        
+        // ngày tháng 
+        let toDay = new Date("2025-09-28");
+        document.writeln(toDay);
         document.writeln(toDay.getDate()) // ngày 
         document.writeln(toDay.getMonth()) // tháng 
-        document.writeln(toDay.getDay()) // thứ
-        // document.writeln(toDay.getDay())
-        document.writeln(toDay.getHours())
+        document.writeln(toDay.getDay()) // thứ (chủ nhật là 0 , thứ hai là 1 )
+        document.writeln(toDay.getHours()); // giờ 
+        
 
 
     </script>
