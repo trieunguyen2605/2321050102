@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 11 </title>
+</head>
+<body>
+    <script>
+        // switch case 
+        // let toDay = new Date();
+        // // chủ nhật là 0, thứ 2 là 1 
+        // let theDay = toDay.getDay();
+        // switch(theDay){
+        //     case 5:
+        //         document.writeln("finally friday");
+        //         break
+        //     case 6:
+        //         document.writeln("supper");
+        //         break
+        //     case 0:
+        //         document.writeln("sleep sunday ");
+        //         break
+        //     default:
+        //         document.writeln(" xin chao ")
+
+        // }
+
+        // 1 for 
+        // for(let i = 1 ; i<=1000 ; i++){
+        //     document.writeln( i+ " anh yêu em <br> ");
+        // }
+
+        // let arrNum = [1,2,3,4,5,6];
+        // for(let i = 0;i<arrNum.length;i++){
+        //     document.writeln(arrNum[i]);
+        // }
+
+        // let danhSach = ["NVT","iu","NTN"];
+        // for(let i = 0;i<danhSach.length;i++){
+        //     document.writeln(" xin chao : " + danhSach[i] + "<br>");
+        // }
+
+        // 2 while
+        // var i = 0 ;
+        // while(i<=10){
+        //     document.writeln("the number is : " + i + "<br>");
+        //     i++;
+        // }
+
+        //3 
+        // alert(" cin chao "); 
+
+        // let result =  confirm(" press a button");
+        // if(result == true ){
+        //     document.writeln("press ok !");
+        // }else{
+        //     document.writeln("press cancel !")
+        // }
+
+        // let result2 = prompt("tiêu đề "," nội dung có sẵn");
+        // document.writeln(result2);
+
+        // 4 function
+        // function sayHellu(){
+        //     document.writeln(" hellu ")
+        // }
+        // sayHellu();
+        // function sayHellu2(name,age){
+        //     document.writeln("hellu : " + name + " " + age +" tuoi " );
+        // }
+        // let nameP = prompt("Tên "," nhập tên ");
+        // let ageP = prompt("tuổi "," nhập tuổi ");
+        // sayHellu2(nameP,ageP);
+
+        // kiểm tra chẵn lẻ 
+        function ktra (so){
+            if(so %2 == 0){
+                document.writeln(" đây là số chắn ! ");
+            }else{
+                document.writeln(" số lẻ !")
+            }
+        }
+        let so = prompt("nhập số : ","điền số của bạn !  ");
+        if(!isNaN(so)){
+            so = parseFloat(so);
+            ktra(so);
+        }else{
+            document.writeln(" vui lòng nhập số !")
+        }
+    </script>
+</body>
+</html>
