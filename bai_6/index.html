@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bai_6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <!-- danh muc trang web  -->
+    <div class="icon-navbar hidden">
+        <i class="fa-solid fa-bars" id="navButton" ></i>
+    </div>
     <div class="header-container">
-        <nav class="danhmuc">
-            <img class="logo" src="https://images.fptplay53.net/media/photo/OTT/2025/05/26/logowebsite4x_1748221195181.png" alt="">
-            <ul class="danhmuc-danhsach">
-                <li class="danhmuc-lienket"><a href="#">trang chủ </a></li>
-                <li class="danhmuc-lienket"><a href="#"> truyền hình </a></li>
-                <li class="danhmuc-lienket"><a href="#"> phim bộ</a></li>
-                <li class="danhmuc-lienket"><a href="#"> V.league</a></li>
-                <li class="danhmuc-lienket"><a href="#"> thiếu nhi </a></li>
-                <li class="danhmuc-lienket"><a href="#"> xem thêm </a></li>
-            </ul>
-        </nav>
-        <!-- chux nang  -->
-        <div class="chucnang">
-            <button class="muagoi">mua goi</button>
-            <button class="dangnhap">dang nhap </button>
+        <div class="header-wrap">
+            <nav class="danhmuc ">
+                <img class="logo" src="https://images.fptplay53.net/media/photo/OTT/2025/05/26/logowebsite4x_1748221195181.png" alt="">
+                <ul class="danhmuc-danhsach ">
+                    <li class="danhmuc-lienket"><a href="#"><b> trang chủ </b></a></li>
+                    <li class="danhmuc-lienket"><a href="#"><b> truyền hình </b></a></li>
+                    <li class="danhmuc-lienket"><a href="#"><b> phim bộ</b></a></li>
+                    <li class="danhmuc-lienket"><a href="#"><b> V.league</b></a></li>
+                    <li class="danhmuc-lienket"><a href="#"><b> thiếu nhi </b></a></li>
+                    <li class="danhmuc-lienket"><a href="#"><b> xem thêm </b></a></li>
+                </ul>
+            </nav>
+            <!-- chux nang  -->
+            <div class="chucnang ">
+                <button class="muagoi">mua goi</button>
+                <button class="dangnhap">dang nhap </button>
+            </div>
         </div>
     </div>
     </header>
@@ -387,5 +394,6 @@
             <p>Giấy phép cung cấp dịch vụ phát thanh, truyền hình trả tiền số 377/GP-BTTTT cấp sửa đổi bổ sung lần 1 ngày 10/10/2023. </p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

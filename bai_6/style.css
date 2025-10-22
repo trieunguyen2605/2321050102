@@ -16,6 +16,10 @@ header{
     justify-content: space-between;
 }
 
+.header-wrap{
+    display: flex;
+}
+
 .danhmuc{
     display: flex;
     align-items: center;
@@ -63,9 +67,31 @@ a:hover{
 }
 
 .dangnhap{
+    position: relative;
     background-color: #000;
-    color: white;
     border: none;
+    color: #fff;
+    padding: 10px 20px ;
+    width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+.dangnhap::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: orange;
+    width: 0;
+    height: 38px;
+    transition: width 0.8s ease;
+    z-index: -1;
+}
+
+.dangnhap:hover::after{
     width: 120px;
 }
 
@@ -128,6 +154,12 @@ main{
 
 .phim {
     width: 19%;
+    transition: all 0.1s ease;
+}
+
+.phim :hover{
+    transform-origin: bottom;
+    transform: scale(1.02,1.04);
 }
 
 .phim img {
@@ -191,3 +223,15 @@ footer{
     margin-top: 20px;
 }
 
+.hidden{
+    display: none;
+}
+/* responsive */
+@media (min-width:768px)and(max-width:1023px){
+    .hidden{
+        display: block;
+    }
+    .header-container{
+        display: none;
+    }
+}

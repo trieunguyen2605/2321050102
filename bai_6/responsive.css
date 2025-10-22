@@ -1,0 +1,72 @@
+/* mobile and tablet  */
+@media(max-width:1023px){
+    header{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .hidden{
+        display: block;
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-bottom: 20px    ;
+        float: right;
+
+    }
+    .header-container{
+        /* display: none; */
+
+    }
+
+    .danhmuc, .danhmuc-danhsach, .header-wrap{
+        display: block;
+    }
+
+    .danhmuc, .danhmuc-danhsach , .chucnang{
+        display: none;
+    }
+
+    .logo{
+        display: block ;
+    }
+
+    .hide{
+        display: block;
+    }
+    .hide-2{
+        display: flex;
+    }
+
+    .logo{
+        margin-top: 20px;
+    }
+
+    .icon-navbar{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .danhmuc-danhsach{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .danhmuc-lienket{
+        padding: 10px 0;
+        border-top: 1px solid #3f3e3e;
+    }
+    
+    .chucnang button:nth-child(2){
+        float: right;
+    }
+    
+    .chucnang{
+        justify-content: space-between;
+    }
+    
+    .danhmuc-lienket a{
+        text-transform: uppercase;
+        color: rgb(164, 165, 167);
+    }
+}
+

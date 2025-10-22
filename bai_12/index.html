@@ -1,0 +1,189 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="">
+        <p> điểm A :</p>
+        <input type="number" id="diemA">
+    </div>
+    <div class="">
+        <p> điểm B :</p>
+        <input type="number" id="diemB">
+    </div>
+    <div class="">
+        <p> điểm C :</p>
+        <input type="number" id="diemC">
+    </div>
+
+    <div class="">
+        <button onclick="xemKQ()"> tính điểm </button>
+    </div>
+
+    <div class="">
+        kết quả : <input type="text" id="ketQua">
+    </div>
+
+    <script>
+        // tạo hàm tính điểm của sv dựa vào 3 điểm A B C 
+        // tổng = a*0.6 + b*0.3 +c * 0.1
+
+        // let diemA = prompt(" điểm A " , " nhập điểm A ");
+        // let diemB = prompt(" điểm B " , " nhập điểm B ");
+        // let diemC = prompt(" điểm C " , " nhập điểm C ");
+        
+        // function tongDiem(diemA,diemB,diemC){
+        //     if((!isNaN(diemA) && !isNaN(diemB) && !isNaN(diemC)) && ( diemA>=0 && diemA<=10 ) && (diemB>=0 && diemB<=10) && ( diemC>=0 &&  diemC<=10)){
+        //         document.writeln( diemA*0.6 + diemB *0.3 + diemC*0.1); 
+
+        //     }else{
+        //         document.writeln(" điểm nhập phải là số !");
+
+        //     }
+        // }
+        // tongDiem(diemA,diemB,diemC);
+
+        //  cách 2 : 
+        function kiemTraHopLe (a,b,c){
+            let kiemTra = true;
+            if(a<0 || a>10 || typeof(a) != 'number'){
+                document.writeln(" điểm a không hợp lệ !");
+                kiemTra = false;
+            }
+            if(b<0 || b>10 || typeof(b) != 'number'){
+                document.writeln(" điểm b không hợp lệ !");
+                kiemTra = false;
+            }
+            if(c<0 || c>10 || typeof(c) != 'number'){
+                document.writeln(" điểm c không hợp lệ !");
+                kiemTra = false;
+            }
+            return kiemTra;
+        }
+        
+        function tong (a,b,c){
+            let tong;
+            if(kiemTraHopLe(a,b,c) == true ){
+                tong =  a*0.6 + b*0.3 +c * 0.1;
+                return(tong);
+            }
+            if(tong>9){
+                document.writeln(" điểm A !");
+            }
+            if(tong<=9 && tong > 7){
+                document.writeln(" điểm B !");
+            }
+            if(tong<=7 && tong>5){
+                document.writeln(" điểm C !");
+            }
+            if(tong<=5 && tong >=1){
+                document.writeln(" điểm D !");
+            }
+            if(tong<1){
+                document.writeln(" điểm F !");
+            }
+        }
+        tong(8,8,8);
+
+        
+        function xemKQ (){
+            let diemA =parseFloat( document.getElementById("diemA").value);
+            let diemB = parseFloat(  document.getElementById("diemB").value);
+            let diemC = parseFloat( document.getElementById("diemC").value);
+            let ketQua = document.getElementById("ketQua").value;
+            // let diem = diemA*0.6 + diemB*0.3 + diemC*0.1;
+            // ketQua = diem;
+            tong(diemA,diemB,diemC);
+        }
+
+
+    </script>
+</body>
+</html> -->
+
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="">
+        <p> điểm A :</p>
+        <input type="number" id="diemA">
+    </div>
+    <div class="">
+        <p> điểm B :</p>
+        <input type="number" id="diemB">
+    </div>
+    <div class="">
+        <p> điểm C :</p>
+        <input type="number" id="diemC">
+    </div>
+
+    <div class="">
+        <button onclick="xemKQ()"> tính điểm </button>
+    </div>
+
+    <div class="">
+        kết quả : <input style="width: 400px;" type="text" id="ketQua">
+    </div>
+
+    <script>
+        function kiemTraHopLe (a,b,c){
+            let kiemTra = true;
+            if(a<0 || a>10 || typeof(a) != 'number'){
+                document.writeln(" điểm a không hợp lệ !");
+                kiemTra = false;
+            }
+            if(b<0 || b>10 || typeof(b) != 'number'){
+                document.writeln(" điểm b không hợp lệ !");
+                kiemTra = false;
+            }
+            if(c<0 || c>10 || typeof(c) != 'number'){
+                document.writeln(" điểm c không hợp lệ !");
+                kiemTra = false;
+            }
+            return kiemTra;
+        }
+        
+        function tinhTong (a,b,c){
+            let tong;
+            if(kiemTraHopLe(a,b,c) == true ){
+                tong =  a*0.6 + b*0.3 +c * 0.1;
+                if(tong>9){
+                    return( tong +" điểm A !");
+                }
+                if(tong<=9 && tong > 7){
+                    return( tong +" điểm B !");
+                }
+                if(tong<=7 && tong>5){
+                    return( tong +" điểm C !");
+                }
+                if(tong<=5 && tong >=1){
+                    return( tong +" điểm D !");
+                }
+                if(tong<1){
+                    return( tong +" điểm F !");
+                }
+            }
+        }
+        // document.writeln(tong(8,8,8));
+        
+        function xemKQ (){
+            let diemA =parseFloat( document.getElementById("diemA").value);
+            let diemB = parseFloat(  document.getElementById("diemB").value);
+            let diemC = parseFloat( document.getElementById("diemC").value);
+            document.getElementById("ketQua").value= tinhTong(diemA,diemB,diemC);
+        }
+    </script>
+</body>
+</html>
