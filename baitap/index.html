@@ -9,45 +9,82 @@
         .yeu-cau {
             color: red;
         }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         .wrap{
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             width: 300px;
+            height: 400px;
+            background-color: pink;
+        }
+        .chiSo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid #b8a6a6;
+            padding: 20px;
+        }
+
+        .img img{
+            /* border: 1px solid #b8a6a6; */
+            width: 100%;
+            height: 100%;
         }
         input{
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
+        }
+        p{
+            margin: 4px 0px 2px;
+            color: red;
+        }
+
+        .btn{
+            background-color:rgb(59, 191, 59);
+            border: none;
+            color: white;
+            border-radius: 3px;
+            margin-top: 10px;
+            padding: 4px 10px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Tính chỉ số BMI</h1>
-    <p>Công thức: Cân năng / (Chiều cao * Chiều cao)</p>
-    <p>Cân nặng: Kg</p>
-    <p>Chiều cao: m</p>
-
-    <div class="yeu-cau">
-        <p>Tạo input cho phép nhập vào chiều cao cân nặng</p>
-        <p>Tạo nút bấm kiểm tra chỉ số BMI</p>
-        <p>Trường hợp 1: Người dùng không nhập hoặc nhập sai thông tin phải cảnh báo</p>
-        <p>Trường hợp 2: Nhập đúng, hiển thị được chỉ số BMI và hình ảnh tương ứng</p>
-    </div>
     <div class="wrap">
-        chieu cao :<input type="text" id="chieuCao">
-        can nang :<input type="text" id="canNang">
-        ket qua : <input type="text" id="ketQua">
-        <button class="btn" onclick="xemKQ()">Tính</button>
+        <div class="chiSo">
+            chieu cao :<input type="text" id="chieuCao">
+            <p id="warning"></p>
+            can nang :<input type="text" id="canNang">
+            <p id="warning"></p>
+            ket qua : <input type="text" id="ketQua">
+            <button class="btn" onclick="xemKQ()">Tính</button>
+        </div>
+        <div class="img">
+            <img id="img" >
+        </div>
     </div>
     <script>
+        let chieuCao_input = document.getElementById("chieuCao");
+        let canNang_input = document.getElementById("canNang");
+        let warning = document.getElementsByTagName("p");
+        let ketQua = document.getElementById("ketQua");
+        let img = document.getElementById("img");
+        // console.log(img)
+
 
         function kiemTra(a,b){
             let KT = true;
             if(a=='' || a<0 || typeof(a) != 'number'){
-                document.writeln(" nhập sai chiều cao ! ");
+                warning[0].innerHTML = " nhập sai chiều cao! ";
                 KT = false;
             }
             if(b==''|| b<0 || typeof(b) != 'number'){
-                document.writeln(" nhập sai cân nặng  ! ");
+                warning[1].innerHTML=(" nhập sai cân nặng  ! ");
                 KT = false;
             }
             return KT;
@@ -62,10 +99,24 @@
         }
 
         function xemKQ(){
-            let chieuCao1 =parseFloat( document.getElementById("chieuCao").value);
-            let canNang1 = parseFloat(  document.getElementById("canNang").value);
-            document.getElementById("ketQua").value = tinhBMI(chieuCao1,canNang1);
+            let chieuCao1 =parseFloat( chieuCao_input.value);
+            let canNang1 = parseFloat(  canNang_input.value);
+            ketQua.value = tinhBMI(chieuCao1,canNang1);
+
+            if(tinhBMI(chieuCao1,canNang1)>40 ){
+                img.src="beonang.png";
+            }else if(tinhBMI(chieuCao1,canNang1)>=30 && tinhBMI(chieuCao1,canNang1)<=39.9){
+                img.src="beocapdo1.png";
+            }else if(tinhBMI(chieuCao1,canNang1)>=25 && tinhBMI(chieuCao1,canNang1)<=29.9){
+                img.src="thua.png";
+            }else if(tinhBMI(chieuCao1,canNang1)>=18.5 && tinhBMI(chieuCao1,canNang1)<=24.9){
+                img.src="binhthuong.png";
+            }else if(tinhBMI(chieuCao1,canNang1)<=18.5){
+                img.src="thieu.png";
+            }
         }
+
+        
 
 
 
