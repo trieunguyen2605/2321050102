@@ -79,11 +79,11 @@
 
         function kiemTra(a,b){
             let KT = true;
-            if(a=='' || a<0 || typeof(a) != 'number'){
+            if(isNaN(a) || a<0 || typeof(a) != 'number'){
                 warning[0].innerHTML = " nhập sai chiều cao! ";
                 KT = false;
             }
-            if(b==''|| b<0 || typeof(b) != 'number'){
+            if(isNaN(b) || b<0 || typeof(b) != 'number'){
                 warning[1].innerHTML=(" nhập sai cân nặng  ! ");
                 KT = false;
             }
@@ -115,11 +115,6 @@
                 img.src="thieu.png";
             }
         }
-
-        
-
-
-
     </script>
 </body>
 
