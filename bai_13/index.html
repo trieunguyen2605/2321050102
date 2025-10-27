@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 13 </title>
+    <style>
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .img img{
+            width: 200px;
+        }
+
+        .bodeBlack{
+            background-color: #000;
+        }
+
+        .colorWhite{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2> ví dụ về chế độ</h2>
+        <div class="img">
+            <img src="mattroi.png" alt="">
+        </div>
+        <h2> chế độ sáng </h2>
+        <div class="btn">
+            <button onclick="doiCheDo()">đổi chế độ </button>
+            <button onclick="doiNhieu()">đổi chế nhieeu </button>
+        </div>
+    </div>
+
+    <script>
+        let cheDo= true ;
+        function doiCheDo(){
+            if(cheDo == true){
+                document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+                document.getElementsByTagName("h2")[1].innerHTML = "chế độ : tối ";
+                document.getElementsByTagName("h2")[0].style.color= "white ";
+                document.getElementsByTagName("h2")[1].style.color= "white ";
+                document.getElementsByTagName("img")[0].src = "mattrang.png"
+                cheDo = false;
+            
+            }else{
+                document.getElementsByTagName("body")[0].style = "background-color:white";
+                document.getElementsByTagName("h2")[1].innerHTML = "chế độ : sang ";
+                document.getElementsByTagName("h2")[0].style= "color:black ";
+                document.getElementsByTagName("h2")[1].style= "color:black ";
+                document.getElementsByTagName("img")[0].src = "mattroi.png"
+                cheDo = true;
+            }
+        }
+    </script>
+</body>
+</html>
