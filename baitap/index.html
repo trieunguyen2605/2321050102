@@ -14,6 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: rgb(226, 228, 222);
         }
         .wrap{
             display: flex;
@@ -51,15 +52,20 @@
             margin-top: 10px;
             padding: 4px 10px;
         }
+        h1{
+            text-align: center;
+            color: red;
+        }
     </style>
 </head>
 
 <body>
     <div class="wrap">
         <div class="chiSo">
-            chieu cao :<input type="text" id="chieuCao">
+            <h1> BMI </h1>
+            chieu cao :<input type="text" id="chieuCao" placeholder="nhập chiều cai của bạn !">
             <p id="warning"></p>
-            can nang :<input type="text" id="canNang">
+            can nang :<input type="text" id="canNang" placeholder="nhập cân nặng của bạn !">
             <p id="warning"></p>
             ket qua : <input type="text" id="ketQua">
             <button class="btn" onclick="xemKQ()">Tính</button>
