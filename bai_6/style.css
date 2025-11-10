@@ -126,7 +126,7 @@ main{
 }
 
 .container img:nth-child(1){
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .banner{
@@ -180,14 +180,56 @@ main{
     width: 600px;
     height: 400px;
 }
+
+.btn__wrap{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #img-btn{
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
     background-color: orange;
     border-radius: 3px;
     border: none;
     padding: 10px 20px;
+    color: white;
+}
+.info__film{
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  /* display: none; */
+}
+
+.info__list{
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.info__year{
+
+}
+
+.info__old{
+
+}
+
+.info__coutfilm{
+
+}
+
+.btn__wrap-icon{
+  margin-left: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  /* color: red; */
+}
+
+.red{
+  color: red;
 }
 /* footer */
 
