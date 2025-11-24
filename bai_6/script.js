@@ -86,13 +86,13 @@ let info_old = document.getElementsByClassName("info__old")[0];
 let info_country = document.getElementsByClassName("info__country")[0];
 // hình trái tim 
 let icon_heart = document.getElementsByClassName("icon__heart")[0];
-// console.log(bannerElement)   
 
 function viewTrailer(){
     bannerElement.style.display = "none";
     trailerElement.style.display = "block";
     img_btn.style.display = "none";
     info_film.style.display = "none";
+    icon_heart.style.display = "none";
     
   }
   
@@ -105,10 +105,12 @@ function viewTrailer(){
     trailerElement.style.display = "none";
     img_btn.style.display = "block";
     // thay đổi info 
+    info_film.style.display = "block";
     info_year.innerHTML = selectedFilm.year;
     info_old.innerHTML = selectedFilm.old;
     info_country.innerHTML = selectedFilm.country;
     // hình trái tim 
+    icon_heart.style.display = "block";
     icon_heart.style.color = "white";
     status_heart = false;
 }
